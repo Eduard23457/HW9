@@ -7,7 +7,7 @@ public class Main {
     }
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
-        int[] arr = new int [30];
+        int[] arr = new int [5];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
@@ -25,14 +25,14 @@ public class Main {
         int[] payTwo = generateRandomArray();
         int maxPay = payTwo[0];
         for( int i = 0; i < payTwo.length; i++) {
-            if (payTwo[i] < maxPay) ;
+            if (payTwo[i] < maxPay)
             {
                 maxPay = payTwo[i];
             }
         }
         int minPay = payTwo[0];
         for (int i = 0; i < payTwo.length; i++) {
-            if (minPay > payTwo[i]);
+            if (minPay > payTwo[i])
             {
                 minPay = payTwo[i];
             }
@@ -46,22 +46,6 @@ public class Main {
             System.out.print(reverseFullName[i]);
         }
         System.out.println();
-        int n = reverseFullName.length;
-        char temp;
-        for (int i = 0; i < n / 2; i++) {
-            temp = reverseFullName[i];
-            reverseFullName[n - i - 1] = reverseFullName[i];
-            reverseFullName[1] = temp;
-        }
-        System.out.println();
-        System.out.println(Arrays.toString(reverseFullName));
-
-        System.out.println();
-
-        System.out.print(reverseFullName);
-        System.out.println();
-
-
         System.out.println("Задача 3");
 
             int[] expensesArray = generateRandomArray();
